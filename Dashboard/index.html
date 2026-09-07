@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zh-CN" data-page-node-id="p2xIJMKskjWOM9jaeCENXy">
+<head data-page-node-id="skEDCgWI9aKVBDw6K3YuzM">
+<meta charset="UTF-8" data-page-node-id="zVv4in3s3LUqyYinAdMvSY">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="Fg4I2qTyna03crQFVYVC6e">
 <title>项目综合态势看板</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -274,8 +274,8 @@
     display:flex; flex-direction:column; align-items:center; justify-content:center; }
   .core .halo {
     position:absolute; left:-42%; top:-20%; width:184%; height:140%; border-radius:50%;
-    background:radial-gradient(closest-side, rgba(0,180,255,.32) 0%, rgba(0,120,220,.12) 52%, transparent 78%);
-    animation:breathe 3.6s ease-in-out infinite;
+    background:radial-gradient(closest-side, rgba(0,180,255,.30) 0%, rgba(0,120,220,.12) 52%, transparent 78%);
+    animation:none;
   }
   @keyframes breathe { 0%,100%{transform:scale(.95);opacity:.75} 50%{transform:scale(1.06);opacity:1} }
   .core .spinring{ position:absolute; left:-9%; top:-6%; right:-9%; bottom:-6%; border-radius:50%;
@@ -283,7 +283,7 @@
     animation:spin 22s linear infinite; }
   .core .spinring.r2 { left:-30%; top:-17%; right:-30%; bottom:-17%; border:1px solid rgba(255,194,71,.26); animation:spin 34s linear infinite reverse; }
   @keyframes spin { to { transform:rotate(360deg); } }
-  .core .logo { width:132px; height:auto; filter:drop-shadow(0 0 6px rgba(0,210,255,.55)) drop-shadow(0 0 18px rgba(0,170,255,.35)); animation:floaty 5s ease-in-out infinite; }
+  .core .logo { width:150px; height:auto; filter:drop-shadow(0 0 6px rgba(0,210,255,.55)) drop-shadow(0 0 18px rgba(0,170,255,.35)); animation:floaty 5s ease-in-out infinite; }
 @keyframes floaty { 0%,100%{transform:translateY(-4px)} 50%{transform:translateY(4px)} }
 .node {
     position:absolute; left:50%; top:50%; width:124px; height:124px;
@@ -324,351 +324,351 @@
   @keyframes fadeIn { to{opacity:1} }
 </style>
 </head>
-<body>
-<div id="stage">
-<div id="screen">
-  <div class="bg"></div>
-  <canvas id="stars"></canvas>
-  <div class="bg-hex"></div>
-  <div class="bg-horizon"></div>
-  <div class="bg-scan"></div>
+<body data-page-node-id="2cKmfKKlUUaiRVkp1U4Dni">
+<div id="stage" data-page-node-id="YMMYGAKfLYTTwkEd8qbEf2">
+<div id="screen" data-page-node-id="oqVzlDqPuOwFoMQn80Lhok">
+  <div class="bg" data-page-node-id="kYyHl5kx2NAcIhoh4gzbrg"></div>
+  <canvas id="stars" data-page-node-id="97dJ42NampKa396fkv3Hl0"></canvas>
+  <div class="bg-hex" data-page-node-id="w1RACKsyLGyjTjdh0nGVxe"></div>
+  <div class="bg-horizon" data-page-node-id="e1oaRBRspYdcDgSQ1XdKrl"></div>
+  <div class="bg-scan" data-page-node-id="nRxBFlnLvXtgzX0LiHymMH"></div>
 
-  <div class="rail l"><i style="top:0"></i><i style="top:6%"></i><i style="top:12%"></i><i style="top:18%"></i><i style="top:24%"></i><i style="top:30%"></i><i style="top:36%"></i><i style="top:42%"></i><i style="top:48%"></i><i style="top:54%"></i><i style="top:60%"></i><i style="top:66%"></i><i style="top:72%"></i><i style="top:78%"></i><i style="top:84%"></i><i style="top:90%"></i><i style="top:96%"></i><span class="flow"></span></div>
-  <div class="rail r"><i style="top:0"></i><i style="top:6%"></i><i style="top:12%"></i><i style="top:18%"></i><i style="top:24%"></i><i style="top:30%"></i><i style="top:36%"></i><i style="top:42%"></i><i style="top:48%"></i><i style="top:54%"></i><i style="top:60%"></i><i style="top:66%"></i><i style="top:72%"></i><i style="top:78%"></i><i style="top:84%"></i><i style="top:90%"></i><i style="top:96%"></i><span class="flow"></span></div>
+  <div class="rail l" data-page-node-id="03v3CcYdiHjRFVRALT8q3B"><i style="top:0" data-page-node-id="JujnZ9eFtpFUowzGA5bhpf"></i><i style="top:6%" data-page-node-id="yE0M5bYxGdgdGZNfSXdOLo"></i><i style="top:12%" data-page-node-id="Huvv9ImlOzDJEUxSCfTOMA"></i><i style="top:18%" data-page-node-id="5UGyHZChwgGELiPtLWiLQC"></i><i style="top:24%" data-page-node-id="zcE5DqsefrXAgaT3LSyElh"></i><i style="top:30%" data-page-node-id="exbYyBuTmigwghj9Vlydwx"></i><i style="top:36%" data-page-node-id="WtRRJYpfUDtI3AK9RTciJM"></i><i style="top:42%" data-page-node-id="FC1G11jevg2d91VhQKgb21"></i><i style="top:48%" data-page-node-id="ld7R3mz2NJDrrDD7HdbymU"></i><i style="top:54%" data-page-node-id="GzlJ8CLWf5svl9Tr6K59tK"></i><i style="top:60%" data-page-node-id="KCf7KI6e6qloaFQR2LtfxS"></i><i style="top:66%" data-page-node-id="an1R8WYzVcDGVUmi1nKTdM"></i><i style="top:72%" data-page-node-id="Ycrmb7CxatgvboJHzhgILH"></i><i style="top:78%" data-page-node-id="fd6og5L1oXUHoWAmZghOB7"></i><i style="top:84%" data-page-node-id="75RdVnFc0JR1vzAvv1zFXW"></i><i style="top:90%" data-page-node-id="o0C0At0G1ACQlbnPrI7hH8"></i><i style="top:96%" data-page-node-id="eXWtpuNLwJU7Dufp50E3xW"></i><span class="flow" data-page-node-id="7Y5aFfbC2sLkGLh27PrYjp"></span></div>
+  <div class="rail r" data-page-node-id="brKXw6prALRzwdlHSLz092"><i style="top:0" data-page-node-id="k2I05bfe38N6GSJQYeDzFm"></i><i style="top:6%" data-page-node-id="XZQaPXXpXMJQtjsUYADEHT"></i><i style="top:12%" data-page-node-id="ZDBwTPSjotxMOkCYqXTBdp"></i><i style="top:18%" data-page-node-id="a84BCmuKEGcBBSXjGBjiT5"></i><i style="top:24%" data-page-node-id="QhqBBhtzZIdDwOZJgWrclt"></i><i style="top:30%" data-page-node-id="lAiZfhbsiQ25A8S7LemYK6"></i><i style="top:36%" data-page-node-id="EHMn85srgLGlSti1zJfxt6"></i><i style="top:42%" data-page-node-id="CdEGq5TgU5zlFrHN0HbqMH"></i><i style="top:48%" data-page-node-id="1Xj5xm9IvoCISVVR881Kr0"></i><i style="top:54%" data-page-node-id="06tPDZJO9EFd70oGRluPiC"></i><i style="top:60%" data-page-node-id="0cvqCewzrTBVTS90byTvZB"></i><i style="top:66%" data-page-node-id="AlnRjqIfRgDOOpcUQfOVYl"></i><i style="top:72%" data-page-node-id="n1iOHDz3Su8vSGjsW2FEG5"></i><i style="top:78%" data-page-node-id="S42bjBKsEO0Jwr0LFJ4Pbr"></i><i style="top:84%" data-page-node-id="OHAHTZNkwss6fVQ3WXPL2H"></i><i style="top:90%" data-page-node-id="nMMbHefxvB73xGmdhWvhbQ"></i><i style="top:96%" data-page-node-id="eiNap2QsHEbeQFeoF4Eqed"></i><span class="flow" data-page-node-id="SKSEOBT9eS2hxee8vDUADY"></span></div>
 
-  <div class="cnr-frame tl"></div><div class="cnr-frame tr"></div>
-  <div class="cnr-frame bl"></div><div class="cnr-frame br"></div>
+  <div class="cnr-frame tl" data-page-node-id="IGoANORpyyS6eFuJGdgJ7c"></div><div class="cnr-frame tr" data-page-node-id="wXI0d0JBQ0Z8Bzpsfegn3S"></div>
+  <div class="cnr-frame bl" data-page-node-id="keF7Tta4xtPMizq79EUhIO"></div><div class="cnr-frame br" data-page-node-id="31naChDrE9BJwX7rXqVYna"></div>
 
   <!-- ========== 顶栏 ========== -->
-  <header>
-    <div class="hd-side">
-      <div class="pill"><span class="bt"></span>系统状态 <b>正常运行</b></div>
-      <div class="pill"><i class="hexdot"></i>数据链路 <b>在线</b></div>
+  <header data-page-node-id="sDX5ravzyN7dGQUsydQWA8">
+    <div class="hd-side" data-page-node-id="WBi2nKXV5i2M07KgyjORJe">
+      <div class="pill" data-page-node-id="iXBZ07YVj6GtTlZWcxTxUb"><span class="bt" data-page-node-id="CHwtgS5ceAZg20RKD5wDtx"></span>系统状态 <b data-page-node-id="7cl6BLlDGQ9rcERGIDZ7UB">正常运行</b></div>
+      <div class="pill" data-page-node-id="Yq5bMVHaDzKuEaxv8yTI0m"><i class="hexdot" data-page-node-id="4Dz5dLsqpvisJqr3W22ZEd"></i>数据链路 <b data-page-node-id="DEFawQL63at7r0bt2nNZC7">在线</b></div>
     </div>
-    <div class="hd-title">
-      <div class="hd-wing l"><i></i><i></i><i></i><b></b></div>
-      <div class="hd-plate">
-        <div class="shine"></div>
-        <h1>项目综合态势看板</h1>
+    <div class="hd-title" data-page-node-id="l0ZpctxD1d2ZR5xxVHI3Dn">
+      <div class="hd-wing l" data-page-node-id="xiWGewtqCsMIhXxjgsWhFK"><i data-page-node-id="jzrGTpbdKl0QfhW8NnhgAL"></i><i data-page-node-id="uGEPCt0AJaIIFpm5uGfGu1"></i><i data-page-node-id="pIgVXwUc3e8iGGhwzRyzh9"></i><b data-page-node-id="hTMZY0qK4joMr5jcVZpkTD"></b></div>
+      <div class="hd-plate" data-page-node-id="Fo835hMfV9qTyKIKfKnJ8d">
+        <div class="shine" data-page-node-id="esxa7r9rz7u49nPf7CgHls"></div>
+        <h1 data-page-node-id="FkfkiEDNUY2J4IUJxp5HSR">项目综合态势看板</h1>
       </div>
-      <div class="hd-wing r"><i></i><i></i><i></i><b></b></div>
+      <div class="hd-wing r" data-page-node-id="OctHMzwEjq5Tpp2cDjg7AS"><i data-page-node-id="OSI3zD8Io5hPGUVHkix0rO"></i><i data-page-node-id="maJ4k0ixYc9j9D0d9bjvAo"></i><i data-page-node-id="hwWmBDIwh6j0O58vgRDo4Z"></i><b data-page-node-id="i1uxfnfoRd2jFQumoe6UrJ"></b></div>
     </div>
-    <div class="hd-side right">
-      <div class="pill">北京时间 <b id="clock">--:--:--</b></div>
-      <div class="pill" id="dateTxt">----年--月--日</div>
+    <div class="hd-side right" data-page-node-id="DmRJZUcsLzWppwM9A8TIEH">
+      <div class="pill" data-page-node-id="6kAEy17PsXQYAEhr50wLbw">北京时间 <b id="clock" data-page-node-id="JsGW9VBFqeVPz7Guz532hF">--:--:--</b></div>
+      <div class="pill" id="dateTxt" data-page-node-id="WPtle16SOj0gKavQFAQCda">----年--月--日</div>
     </div>
   </header>
 
   <!-- ========== 主体 ========== -->
-  <main>
+  <main data-page-node-id="nKnG7fLNwS2Gd1r0BfwjLy">
     <!-- ---------- 左列 ---------- -->
-    <div class="col left">
+    <div class="col left" data-page-node-id="dzueZgjMPBg1jc4Vn7uSxE">
       <!-- 01 发射任务态势 -->
-      <section class="card">
-        <i class="cnr tl"></i><i class="cnr tr"></i><i class="cnr bl"></i><i class="cnr br"></i>
-        <div class="card-hd"><span class="idx num">01</span>
-          <div class="tt"><h2>发射任务态势</h2></div>
-          <div class="eq"><i></i><i></i><i></i><i></i></div>
-          <span class="tag">年度</span>
+      <section class="card" data-page-node-id="b2CADo7mZSU5WAMbXu1k0Z">
+        <i class="cnr tl" data-page-node-id="gjjTK3kOfDIFRdrIbBfB58"></i><i class="cnr tr" data-page-node-id="lNUjlt7vlpdDZf32EfkZ41"></i><i class="cnr bl" data-page-node-id="vVGRUyX5oKOfR4wr5cAEBo"></i><i class="cnr br" data-page-node-id="K9G0RWYypsFS48ssNcjKHN"></i>
+        <div class="card-hd" data-page-node-id="rNwR8es8pngbFOBRyIqJI3"><span class="idx num" data-page-node-id="WVQZijv68PWlwo7rrsJiUY">01</span>
+          <div class="tt" data-page-node-id="Ok5FV5WFJwyshGi8NSa5KL"><h2 data-page-node-id="u1iauESm3VeQBLJF04URGe">发射任务态势</h2></div>
+          <div class="eq" data-page-node-id="0TkS7hyl985ELCSPeetorg"><i data-page-node-id="ppo7KNYZQA7JV7xFXQkMtf"></i><i data-page-node-id="6uhylL3GUhAH21gzNHZlS9"></i><i data-page-node-id="cshs57WnJh59IJskd9f3oE"></i><i data-page-node-id="UJXiX9pkQodr2toTCQrERs"></i></div>
+          <span class="tag" data-page-node-id="DQHI1kk4qNi5xcrCr0fMGU">年度</span>
         </div>
-        <div class="card-bd">
-          <div class="ring-wrap" style="margin-bottom:10px;">
-            <div class="ring">
-              <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(18,54,102,.9)" stroke-width="6"/>
+        <div class="card-bd" data-page-node-id="ug56sqI6C9nMq1bCilkdAr">
+          <div class="ring-wrap" style="margin-bottom:10px;" data-page-node-id="ns1N0wBdBhUndbqYvnrSC3">
+            <div class="ring" data-page-node-id="zwVyvbringUwEkjZXCh0zx">
+              <svg width="100" height="100" data-page-node-id="3wV9PiZRvPmyraDOWGYpXB">
+                <circle cx="50" cy="50" r="40" fill="none" stroke="rgba(18,54,102,.9)" stroke-width="6" data-page-node-id="ejz7Pggx0DTEURPPZavsuh"/>
                 <circle cx="50" cy="50" r="40" fill="none" stroke="#ffc247" stroke-width="6" stroke-linecap="round"
                         stroke-dasharray="251.3" stroke-dashoffset="251.3"
-                        style="filter:drop-shadow(0 0 6px #ffc247); animation:dashIn 1.6s cubic-bezier(.2,.8,.25,1) .5s forwards"/>
-                <circle cx="50" cy="50" r="31" fill="none" stroke="rgba(0,229,255,.22)" stroke-width="1"/>
+                        style="filter:drop-shadow(0 0 6px #ffc247); animation:dashIn 1.6s cubic-bezier(.2,.8,.25,1) .5s forwards" data-page-node-id="4kAXFJj4W589D9eWGDK1jQ"/>
+                <circle cx="50" cy="50" r="31" fill="none" stroke="rgba(0,229,255,.22)" stroke-width="1" data-page-node-id="VJVqHz6D5HBn5P9ea593Gx"/>
               </svg>
-              <div class="rt"><b class="num" data-count="97.9" data-dec="1">0</b><span>成功率 %</span></div>
+              <div class="rt" data-page-node-id="PzomiY0AKA0100T8l6tuka"><b class="num" data-count="97.9" data-dec="1" data-page-node-id="FH9EnRTUlgdkx68EFUI6VV">0</b><span data-page-node-id="N8kGcK5C0usNAXU30Tg1Cn">成功率 %</span></div>
             </div>
-            <div style="flex:1;">
-              <div class="kpi-row" style="margin-bottom:8px;">
-                <div class="kpi"><div class="lb">年度发射</div><div class="vl num"><span data-count="48">0</span><small>次</small></div></div>
-                <div class="kpi"><div class="lb">成功</div><div class="vl num" style="color:var(--ok)"><span data-count="47">0</span><small>次</small></div></div>
+            <div style="flex:1;" data-page-node-id="5MkyerJLCqiehTQR5V4PYc">
+              <div class="kpi-row" style="margin-bottom:8px;" data-page-node-id="B6UClI6bJehDJyyJEronAT">
+                <div class="kpi" data-page-node-id="IIGXAXedwI6sb05XXqP7BB"><div class="lb" data-page-node-id="6Z0uHjiTa5UFH4ywZEAaTl">年度发射</div><div class="vl num" data-page-node-id="XwsJIHMi0L50EJx0sOYCuG"><span data-count="48" data-page-node-id="UazQJxvnpbJixZrP9aP2PG">0</span><small data-page-node-id="f7PBrZbSYGbgDyEcuSxILW">次</small></div></div>
+                <div class="kpi" data-page-node-id="i9xrrox0ZU0It4s1mjYFRZ"><div class="lb" data-page-node-id="DV2zZ20yLCucDEySAmlBx2">成功</div><div class="vl num" style="color:var(--ok)" data-page-node-id="LUgEDrQvYoMzi8Y4j2L3nG"><span data-count="47" data-page-node-id="idC4m8SSy7k1G0vYohL6GD">0</span><small data-page-node-id="4PypCkA1Qw4sHCmbulMEqg">次</small></div></div>
               </div>
-              <div class="kpi-row">
-                <div class="kpi"><div class="lb">待执行任务</div><div class="vl num" style="color:var(--c3)"><span data-count="6">0</span><small>项</small></div></div>
-                <div class="kpi"><div class="lb">平均间隔</div><div class="vl num"><span data-count="7.6" data-dec="1">0</span><small>天</small></div></div>
+              <div class="kpi-row" data-page-node-id="EkXH1AeTg6sELTFoCBphse">
+                <div class="kpi" data-page-node-id="W2Ceb4JnfvyzBNRaogIA6U"><div class="lb" data-page-node-id="d9ND7DbFWNOS7NCIUORPGY">待执行任务</div><div class="vl num" style="color:var(--c3)" data-page-node-id="AdDVEMBXtRkeUxw0XPqeSI"><span data-count="6" data-page-node-id="ngnWGyt1K3o6oOPJMW8A2m">0</span><small data-page-node-id="Y2Eo3O0sLzBtmWqxX1BOs3">项</small></div></div>
+                <div class="kpi" data-page-node-id="EBhIqF1FOQFYBgHPVOb3fo"><div class="lb" data-page-node-id="XOHzF0U2yzEt0iAQEZj0eC">平均间隔</div><div class="vl num" data-page-node-id="bHPR9FTVZO90Qz8yP3e1OA"><span data-count="7.6" data-dec="1" data-page-node-id="AUaKM6zL89fVmff9RX4agS">0</span><small data-page-node-id="26R0vpnvKnov4SUqhWXsFP">天</small></div></div>
               </div>
             </div>
           </div>
-          <div class="push-bot">
-            <div style="font-size:10.5px;color:#74a8d6;letter-spacing:1.5px;margin-bottom:3px;">月度发射分布 / 次</div>
-            <div class="bars" id="bars1"></div>
+          <div class="push-bot" data-page-node-id="y95PXKiOoxo7579jDhVHBh">
+            <div style="font-size:10.5px;color:#74a8d6;letter-spacing:1.5px;margin-bottom:3px;" data-page-node-id="RgBHMydZAIlVCFZX4MO8Df">月度发射分布 / 次</div>
+            <div class="bars" id="bars1" data-page-node-id="6LzlvxrbHx9EeNXDfWN23o"></div>
           </div>
         </div>
       </section>
 
       <!-- 02 在轨资产总览 -->
-      <section class="card">
-        <i class="cnr tl"></i><i class="cnr tr"></i><i class="cnr bl"></i><i class="cnr br"></i>
-        <div class="card-hd"><span class="idx num">02</span>
-          <div class="tt"><h2>在轨资产总览</h2></div>
-          <div class="eq"><i></i><i></i><i></i><i></i></div>
-          <span class="tag">实时</span>
+      <section class="card" data-page-node-id="SK9EqQwTLv2cmpRZ2oGR8A">
+        <i class="cnr tl" data-page-node-id="fqgERZRnoqNjfdcFWVCf7b"></i><i class="cnr tr" data-page-node-id="Dqwtv93U2NEmaQwHmFdb5C"></i><i class="cnr bl" data-page-node-id="l9hqA4NVx2zWa0BtzHx7zD"></i><i class="cnr br" data-page-node-id="VUfl6QDdfrK0twrJ6BE1XP"></i>
+        <div class="card-hd" data-page-node-id="40XFApOeptEd7rg00ULkXf"><span class="idx num" data-page-node-id="8IcrBQS0WPk8asS5MWWQcU">02</span>
+          <div class="tt" data-page-node-id="KhrJnOAEUbUIKgxgf4GPwn"><h2 data-page-node-id="OJ8LJ10G4gYHqqkUmMJ0tV">在轨资产总览</h2></div>
+          <div class="eq" data-page-node-id="PI5WGL8yOByNZUUeV83mvg"><i data-page-node-id="IBMXguK71VhSsDjMaMqzqD"></i><i data-page-node-id="dqvNfCJofsedPgNHACYqQX"></i><i data-page-node-id="BvWczEVZ4fjHjMLsB67Z0Q"></i><i data-page-node-id="ZohNJGYBTGAGbN6UDyKcaC"></i></div>
+          <span class="tag" data-page-node-id="k3RfnaCaA1NugWQHSXq9Y4">实时</span>
         </div>
-        <div class="card-bd">
-          <div class="kpi-row" style="margin-bottom:10px;">
-            <div class="kpi"><div class="lb">在轨合计</div><div class="vl num"><span data-count="141">0</span><small>器</small></div></div>
-            <div class="kpi"><div class="lb">本月新增</div><div class="vl num" style="color:var(--ok)">+<span data-count="4">0</span></div></div>
-            <div class="kpi"><div class="lb">本月离轨</div><div class="vl num" style="color:#8fb4d8"><span data-count="2">0</span></div></div>
+        <div class="card-bd" data-page-node-id="3P3XBToYTq09W83YKhuH7A">
+          <div class="kpi-row" style="margin-bottom:10px;" data-page-node-id="H74jkcXrFKeBOs53iuyNyH">
+            <div class="kpi" data-page-node-id="r52lX04YuOd0C8OIEEAAe8"><div class="lb" data-page-node-id="F7oiFvx9iKhA3DCYqH7hN9">在轨合计</div><div class="vl num" data-page-node-id="t6Zz85O3dpDbcULmFXWAUs"><span data-count="141" data-page-node-id="l8f2HNkYYZDTf2PWOWfR4H">0</span><small data-page-node-id="8IDIom40S4VvLLbnuvxCug">器</small></div></div>
+            <div class="kpi" data-page-node-id="hSfRb9XJrAV6oJpH7YZHIE"><div class="lb" data-page-node-id="pC9EzuIgdMNlOAHj8CPpU8">本月新增</div><div class="vl num" style="color:var(--ok)" data-page-node-id="O6mUBtJqFsONLf7s9lURU3">+<span data-count="4" data-page-node-id="hyMFGzdsEWpIxuSKwjWqod">0</span></div></div>
+            <div class="kpi" data-page-node-id="6zOQRXNpDZaplVHBYfldiC"><div class="lb" data-page-node-id="pL7XJesB3dWf3cbjYNMNb7">本月离轨</div><div class="vl num" style="color:#8fb4d8" data-page-node-id="HUNHVk3RMOtsUhISYoUCuW"><span data-count="2" data-page-node-id="SQfMth3BrPcgasUxuAE94V">0</span></div></div>
           </div>
-          <div class="catgrid" style="margin-bottom:11px;">
-            <div class="cat"><b class="num" data-count="132">0</b><span>卫星</span></div>
-            <div class="cat"><b class="num" style="color:var(--c3)" data-count="3">0</b><span>飞船</span></div>
-            <div class="cat"><b class="num" style="color:var(--ok)" data-count="5">0</b><span>探测器</span></div>
-            <div class="cat"><b class="num" style="color:var(--c4)" data-count="1">0</b><span>空间站</span></div>
+          <div class="catgrid" style="margin-bottom:11px;" data-page-node-id="GoUdp8NFDQqbEHQqLQU4Lj">
+            <div class="cat" data-page-node-id="9yKc8CCp5R3I1WBxb3wuBM"><b class="num" data-count="132" data-page-node-id="xsl3KU477RXBjAnU7dmZ7U">0</b><span data-page-node-id="JDxYpi5FeNNdYummCnjE99">卫星</span></div>
+            <div class="cat" data-page-node-id="GmfYOVlqfQlDfFTnji4ceN"><b class="num" style="color:var(--c3)" data-count="3" data-page-node-id="T9Q55suNFSEohs2TlhZ5fN">0</b><span data-page-node-id="FFzbhGaeKguSVioa8Aaoxn">飞船</span></div>
+            <div class="cat" data-page-node-id="gQ5lZoGK7IW7EB80CsTp0P"><b class="num" style="color:var(--ok)" data-count="5" data-page-node-id="OvMjOHCp36wMikIgbPxhTr">0</b><span data-page-node-id="sXfnRA6cHCFWyVip3nMvZx">探测器</span></div>
+            <div class="cat" data-page-node-id="Ga7MjjCCdQb9j7waW0ixFU"><b class="num" style="color:var(--c4)" data-count="1" data-page-node-id="ZEaYB902OHxI8XnaybMbKg">0</b><span data-page-node-id="1uFK04Lw1xGWSxzFmOJat8">空间站</span></div>
           </div>
-          <div class="plist">
-            <div class="pitem"><div class="pt">在轨健康度 <b class="num" data-count="96.4" data-dec="1" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:96.4%"></div></div></div>
-            <div class="pitem"><div class="pt">载荷在线率 <b class="num" data-count="92.1" data-dec="1" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:92.1%;background:linear-gradient(90deg,#0a62c8,#25d68a)"></div></div></div>
-            <div class="pitem"><div class="pt">轨道资源占用 <b class="num" data-count="68.7" data-dec="1" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:68.7%;background:linear-gradient(90deg,#8a5a00,#ffc247)"></div></div></div>
+          <div class="plist" data-page-node-id="B2V20b1EgkgFy1H99TPp42">
+            <div class="pitem" data-page-node-id="SHXwTVc6UgC5HOGtX62tIN"><div class="pt" data-page-node-id="UF7CoIt5l3O6VIyOOt1OF9">在轨健康度 <b class="num" data-count="96.4" data-dec="1" data-suf="%" data-page-node-id="GAkZuXQeBLqzBcVMPg3csX">0</b></div>
+              <div class="ptrack" data-page-node-id="zIzDANGCPLNcPCksvPMZ1Y"><div class="pfill" style="--w:96.4%" data-page-node-id="GhC6LnpFnFB8VPWPkzg8j0"></div></div></div>
+            <div class="pitem" data-page-node-id="4jeMeiyo9dWhecTCoOq7yi"><div class="pt" data-page-node-id="2E39Ej4AMGkCFAqoCKSPFC">载荷在线率 <b class="num" data-count="92.1" data-dec="1" data-suf="%" data-page-node-id="DDqrl4NxiJzqBOjvIG5CRS">0</b></div>
+              <div class="ptrack" data-page-node-id="0EaTM2fblED85UG83ESlJQ"><div class="pfill" style="--w:92.1%;background:linear-gradient(90deg,#0a62c8,#25d68a)" data-page-node-id="UEYiPtEFSavo6M7CYIN8VM"></div></div></div>
+            <div class="pitem" data-page-node-id="yqmkB6Wj9O5GgVDLkL46PA"><div class="pt" data-page-node-id="IvwHQbLCErstnBpD1DmBGJ">轨道资源占用 <b class="num" data-count="68.7" data-dec="1" data-suf="%" data-page-node-id="Tzm8myohCEnFDnFUYjuBU9">0</b></div>
+              <div class="ptrack" data-page-node-id="hMifkFUk4aTePq8DFJBka8"><div class="pfill" style="--w:68.7%;background:linear-gradient(90deg,#8a5a00,#ffc247)" data-page-node-id="43l74MdcymkKmUg0wTLOy0"></div></div></div>
           </div>
         </div>
       </section>
 
       <!-- 03 测控与通信 -->
-      <section class="card">
-        <i class="cnr tl"></i><i class="cnr tr"></i><i class="cnr bl"></i><i class="cnr br"></i>
-        <div class="card-hd"><span class="idx num">03</span>
-          <div class="tt"><h2>测控与通信</h2></div>
-          <div class="eq"><i></i><i></i><i></i><i></i></div>
-          <span class="tag">14 站</span>
+      <section class="card" data-page-node-id="GBto2A5el6erKFayhDsb7T">
+        <i class="cnr tl" data-page-node-id="lHhYOHiEMBn7ClyepW01aQ"></i><i class="cnr tr" data-page-node-id="4k9835xnHumH90d6AMWPpk"></i><i class="cnr bl" data-page-node-id="ORrW5eTHHSaZNZTiYQ2YQe"></i><i class="cnr br" data-page-node-id="H8iqXde7cKKjLLLfXbEn2h"></i>
+        <div class="card-hd" data-page-node-id="QbmxmdUn4i4zzqrYnOApDB"><span class="idx num" data-page-node-id="I17C4puvyLmgl348OVyAlP">03</span>
+          <div class="tt" data-page-node-id="XMYX2h9P7VFPl0na5t9oE8"><h2 data-page-node-id="rQqUj9tqMo4MwRIMtXVoFq">测控与通信</h2></div>
+          <div class="eq" data-page-node-id="zcFAhrqvjzi9YxxhOFDala"><i data-page-node-id="V31oeCsFSkPHI2KptZjlQT"></i><i data-page-node-id="EDa8imB7Mmz8mv9GaS276V"></i><i data-page-node-id="CcxEOV9VqCZawhLMTzFzis"></i><i data-page-node-id="MgfJiSzdv2jjDPPGQSNuHN"></i></div>
+          <span class="tag" data-page-node-id="bUHLCdy8lEZ6KTc9IrrzDM">14 站</span>
         </div>
-        <div class="card-bd">
-          <div class="kpi-row" style="margin-bottom:9px;">
-            <div class="kpi"><div class="lb">地面站在线</div><div class="vl num"><span data-count="12">0</span><small>/14</small></div></div>
-            <div class="kpi"><div class="lb">弧段利用率</div><div class="vl num" style="color:var(--ok)"><span data-count="82.4" data-dec="1">0</span><small>%</small></div></div>
-            <div class="kpi"><div class="lb">链路可用度</div><div class="vl num"><span data-count="99.2" data-dec="1">0</span><small>%</small></div></div>
+        <div class="card-bd" data-page-node-id="wTxG5WtgbOcoJA5PZQAMoH">
+          <div class="kpi-row" style="margin-bottom:9px;" data-page-node-id="1cNpLfVTALRGuQUGsKpzNd">
+            <div class="kpi" data-page-node-id="q2trlYBrHOZ7PQdsJklVuS"><div class="lb" data-page-node-id="fUJrB0aBp4Flvx4q6uAJTS">地面站在线</div><div class="vl num" data-page-node-id="Ik9w3ICDbfQBe8mrCmFfHh"><span data-count="12" data-page-node-id="bg4WkrsjEexZYIZ2jdyPVJ">0</span><small data-page-node-id="7b7g5eTLOvSL6btgL0Ee2G">/14</small></div></div>
+            <div class="kpi" data-page-node-id="PctNenCF7lVZ48kbV7AgCS"><div class="lb" data-page-node-id="bEn8Vc50FrZKdkRClar8km">弧段利用率</div><div class="vl num" style="color:var(--ok)" data-page-node-id="FjONaURy9GTZw59Em71WgK"><span data-count="82.4" data-dec="1" data-page-node-id="fnMzcMEq9AV5RzkXWvdhL1">0</span><small data-page-node-id="L14U9YjBIhKo5REeMEqCn4">%</small></div></div>
+            <div class="kpi" data-page-node-id="xuo3wPsCnF2Q2rGd1uIBd6"><div class="lb" data-page-node-id="eBw1veKeeY3VyfyY26LIwu">链路可用度</div><div class="vl num" data-page-node-id="Jh2F9gM8wZLnVYa7fBpeFE"><span data-count="99.2" data-dec="1" data-page-node-id="BD5X1t7cOplNHlaz9UEcfy">0</span><small data-page-node-id="q2d2qVpAWFpVmLkDVpcTUc">%</small></div></div>
           </div>
-          <div class="slist">
-            <div class="srow"><i class="dot"></i><span class="nm">喀什站</span><span class="ds">跟踪正常 · 仰角 42°</span>
-              <span class="sig"><i style="height:5px"></i><i style="height:8px"></i><i style="height:11px"></i></span><span class="st">在线</span></div>
-            <div class="srow"><i class="dot"></i><span class="nm">三亚站</span><span class="ds">跟踪正常 · 仰角 31°</span>
-              <span class="sig"><i style="height:5px"></i><i style="height:8px"></i><i style="height:11px"></i></span><span class="st">在线</span></div>
-            <div class="srow warn"><i class="dot w"></i><span class="nm">密云站</span><span class="ds">设备检修 · 预计 2h</span>
-              <span class="sig"><i style="height:4px;background:#ffc247"></i><i style="height:6px;background:#ffc247"></i><i style="height:8px;opacity:.25"></i></span><span class="st">降级</span></div>
-            <div class="srow"><i class="dot"></i><span class="nm">昆明站</span><span class="ds">跟踪正常 · 仰角 57°</span>
-              <span class="sig"><i style="height:5px"></i><i style="height:8px"></i><i style="height:11px"></i></span><span class="st">在线</span></div>
-            <div class="srow"><i class="dot"></i><span class="nm">中继星</span><span class="ds">天链一号 · 链路稳定</span>
-              <span class="sig"><i style="height:6px"></i><i style="height:9px"></i><i style="height:11px"></i></span><span class="st">在线</span></div>
+          <div class="slist" data-page-node-id="PAJ9QBzdCe21Ab533EAAqd">
+            <div class="srow" data-page-node-id="oGrQMdb3mxoaxc8vXTf9g3"><i class="dot" data-page-node-id="B9ihddYuayNWpo9bIJFvOg"></i><span class="nm" data-page-node-id="taFkrTRlEBPIXbe1M4SySw">喀什站</span><span class="ds" data-page-node-id="siLnN65bxn4lgp10VwLulB">跟踪正常 · 仰角 42°</span>
+              <span class="sig" data-page-node-id="Ca6GHyWeTNDNx9FhDEhJCk"><i style="height:5px" data-page-node-id="BXWtPSlf8PCTta3L2SlHck"></i><i style="height:8px" data-page-node-id="B6YKfkCHZE7VZlEfwMQv9o"></i><i style="height:11px" data-page-node-id="HKgw9SFDV8cexjyqunf7JO"></i></span><span class="st" data-page-node-id="jWcREgFgFCloBm2Ei95Fbs">在线</span></div>
+            <div class="srow" data-page-node-id="qb1s107hW5SPK73NZnKtqm"><i class="dot" data-page-node-id="bvqjOmTrfZNVdcivFi0P1s"></i><span class="nm" data-page-node-id="VU2JwrWBjxDOnx7UGschIF">三亚站</span><span class="ds" data-page-node-id="PzDmFy0jtUs23GOwOuGQ80">跟踪正常 · 仰角 31°</span>
+              <span class="sig" data-page-node-id="3vtCw6EFp8RnnehcuwlKYY"><i style="height:5px" data-page-node-id="sIynuSHbBLdPx3NB11E4xG"></i><i style="height:8px" data-page-node-id="ppFlCU1OspGbK8fBIVtW45"></i><i style="height:11px" data-page-node-id="DNnHrWQa0uqHquoDFlUISB"></i></span><span class="st" data-page-node-id="TnPAqBXykp8R7LcC6kRCB0">在线</span></div>
+            <div class="srow warn" data-page-node-id="RnFscnHximzcdWj5cieEif"><i class="dot w" data-page-node-id="noabjCDM8qmbT0ayAbRKjt"></i><span class="nm" data-page-node-id="k2sC3PltranxQ2aWAFU07D">密云站</span><span class="ds" data-page-node-id="mmVEgcxZnBw8aAA6VQXV7m">设备检修 · 预计 2h</span>
+              <span class="sig" data-page-node-id="cHMXrkBW0j99GYzWlHsiyA"><i style="height:4px;background:#ffc247" data-page-node-id="VCmAQ0ACLWkKHksGfSKTQA"></i><i style="height:6px;background:#ffc247" data-page-node-id="F0HDtDFcGodfklTbRxqoeH"></i><i style="height:8px;opacity:.25" data-page-node-id="aENrQSlmG0uEHZivCnwDjz"></i></span><span class="st" data-page-node-id="3EB7VGTpdgTbgdWCt4oH1J">降级</span></div>
+            <div class="srow" data-page-node-id="lFu0PM6cOwbQPpGree3RDi"><i class="dot" data-page-node-id="OljJ30E3MvXUJEDBnQ5DS5"></i><span class="nm" data-page-node-id="fpTAp2On7j3o34ekodHs9X">昆明站</span><span class="ds" data-page-node-id="7zqe6b3hRqCfzEDoGPKPBV">跟踪正常 · 仰角 57°</span>
+              <span class="sig" data-page-node-id="HzfXhY9VMCXSgKHQU1bSIq"><i style="height:5px" data-page-node-id="2mAoqt5k6jQd6P3hQGgIE6"></i><i style="height:8px" data-page-node-id="LHPTTbDd0Xkvhi3GzU9GsX"></i><i style="height:11px" data-page-node-id="AobdVhFUOWxE87hKj1e57V"></i></span><span class="st" data-page-node-id="KLEyEOQjziZDJM349dXFP7">在线</span></div>
+            <div class="srow" data-page-node-id="a6kdpd4GUOX7sS7jN7zl1I"><i class="dot" data-page-node-id="pYqkA5YHlJprTL1okOfFlk"></i><span class="nm" data-page-node-id="zbpOOOr1iog4SqZ5nc9HkZ">中继星</span><span class="ds" data-page-node-id="IKpH8i0BbqItSCTqDqz5aW">天链一号 · 链路稳定</span>
+              <span class="sig" data-page-node-id="SrJ6E7i3yZ1Xc75dvqnzox"><i style="height:6px" data-page-node-id="cABqhA7BOQgFh7kwsh3sAX"></i><i style="height:9px" data-page-node-id="mSKZEEFuFGQDtS03MflgRB"></i><i style="height:11px" data-page-node-id="aRGkjzBlt8I7vuNGQpTaAN"></i></span><span class="st" data-page-node-id="9PUquOLQtyStEyjAtGIfy3">在线</span></div>
           </div>
         </div>
       </section>
     </div>
 
     <!-- ---------- 中间：旋转阵列 ---------- -->
-    <div class="center">
-      <div class="orbit-area" id="orbitArea">
-        <svg class="orbits" viewBox="0 0 600 900" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <defs>
-            <linearGradient id="og2" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%"   stop-color="#00e5ff" stop-opacity=".85"/>
-              <stop offset="50%"  stop-color="#0a62c8" stop-opacity=".40"/>
-              <stop offset="100%" stop-color="#ffc247" stop-opacity=".70"/>
+    <div class="center" data-page-node-id="PxJhP6ARHoG1e1z90kFX05">
+      <div class="orbit-area" id="orbitArea" data-page-node-id="G7TwYy2zgcSRZ5xByEfN5m">
+        <svg class="orbits" viewBox="0 0 900 900" preserveAspectRatio="xMidYMid meet" xmlns:xlink="http://www.w3.org/1999/xlink" data-page-node-id="HkcFAJYC33xbyGtp0j6ASG">
+          <defs data-page-node-id="8jTqUq7kIolDAdxTZnPepO">
+            <linearGradient id="og2" x1="0" y1="0" x2="0" y2="1" data-page-node-id="WgekBtKL2cNsDGo9ZkxeiP">
+              <stop offset="0%"   stop-color="#00e5ff" stop-opacity=".85" data-page-node-id="eIRoWnWZc005llBuHUls4h"/>
+              <stop offset="50%"  stop-color="#0a62c8" stop-opacity=".40" data-page-node-id="YA6YL8NzVy5CMcNaneNPme"/>
+              <stop offset="100%" stop-color="#ffc247" stop-opacity=".70" data-page-node-id="6r4TGopPn374I0PI3Ajyl4"/>
             </linearGradient>
-            <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
-              <feGaussianBlur stdDeviation="3.5" result="b"/>
-              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            <filter id="glow" x="-200%" y="-200%" width="500%" height="500%" data-page-node-id="d7eAp5K3K5xbAsUaUNwof7">
+              <feGaussianBlur stdDeviation="3.5" result="b" data-page-node-id="bCsmZSz53Bh0Qztq36EtWM"/>
+              <feMerge data-page-node-id="CK7xFnkJ6WjL15KwWLQbzv"><feMergeNode in="b" data-page-node-id="LhofXCBAzgpawiM8QzLIDK"/><feMergeNode in="SourceGraphic" data-page-node-id="xZRSPU7YjC32GtoZuqAl9T"/></feMerge>
             </filter>
           </defs>
 
-          <!-- 装饰椭圆 -->
-          <ellipse cx="300" cy="450" rx="290" ry="410" fill="none" stroke="rgba(0,150,255,.13)" stroke-width="1"/>
-          <ellipse cx="300" cy="450" rx="205" ry="325" fill="none" stroke="rgba(255,194,71,.15)" stroke-width="1" stroke-dasharray="3 9"/>
-          <!-- 主轨道 -->
-          <ellipse cx="300" cy="450" rx="250" ry="380" fill="none" stroke="url(#og2)" stroke-width="1.6" stroke-dasharray="9 11">
-            <animate attributeName="stroke-dashoffset" from="0" to="-400" dur="16s" repeatCount="indefinite"/>
-          </ellipse>
+          <!-- 装饰环 -->
+          <circle cx="450" cy="450" r="422" fill="none" stroke="rgba(0,150,255,.13)" stroke-width="1" data-page-node-id="2MxEjsy9tay5SCDDDpoUuc"/>
+          <circle cx="450" cy="450" r="312" fill="none" stroke="rgba(255,194,71,.15)" stroke-width="1" stroke-dasharray="3 9" data-page-node-id="b294ZkCCyrM99PU5fSe2Yl"/>
+          <!-- 主轨道（圆形） -->
+          <circle cx="450" cy="450" r="384" fill="none" stroke="url(#og2)" stroke-width="1.6" stroke-dasharray="9 11" data-page-node-id="fb6fi5UpCWoockAL9l0Czn">
+            <animate attributeName="stroke-dashoffset" from="0" to="-400" dur="16s" repeatCount="indefinite" data-page-node-id="0ajFiInKnjGsDWR9h1B4z4"/>
+          </circle>
 
           <!-- 轨道上流动的光点 -->
-          <path id="op" d="M 300 70 A 250 380 0 1 1 300 830 A 250 380 0 1 1 300 70" fill="none" stroke="none"/>
-          <circle r="4.5" fill="#8ff0ff" filter="url(#glow)">
-            <animateMotion dur="9s" repeatCount="indefinite" begin="0s"><mpath href="#op" xlink:href="#op"/></animateMotion>
+          <path id="op" d="M 66 450 A 384 384 0 1 1 834 450 A 384 384 0 1 1 66 450" fill="none" stroke="none" data-page-node-id="Fm2vpqgKkt3IwBnSB9eAoy"/>
+          <circle r="4.5" fill="#8ff0ff" filter="url(#glow)" data-page-node-id="llFGVnFzUiNiQvRmrRcUg0">
+            <animateMotion dur="9s" repeatCount="indefinite" begin="0s" data-page-node-id="HTlIfBk7JCPtQ8g40wVBQM"><mpath href="#op" xlink:href="#op" data-page-node-id="gJatxb7TqvpAvkI3AFSmHC"/></animateMotion>
           </circle>
-          <circle r="3" fill="#ffc247" filter="url(#glow)">
-            <animateMotion dur="13s" repeatCount="indefinite" begin="-4s"><mpath href="#op" xlink:href="#op"/></animateMotion>
+          <circle r="3" fill="#ffc247" filter="url(#glow)" data-page-node-id="4i5LHptNRCG0ZDR4NHfxuD">
+            <animateMotion dur="13s" repeatCount="indefinite" begin="-4s" data-page-node-id="IJ2zpw9Zgw3HZ6mCznsmNA"><mpath href="#op" xlink:href="#op" data-page-node-id="HabW284mAVdvzu1OEiRqGv"/></animateMotion>
           </circle>
-          <circle r="2.5" fill="#a86bff" filter="url(#glow)">
-            <animateMotion dur="7s" repeatCount="indefinite" begin="-2s"><mpath href="#op" xlink:href="#op"/></animateMotion>
+          <circle r="2.5" fill="#a86bff" filter="url(#glow)" data-page-node-id="aSed8RRG1D4nzYBS8l5lCO">
+            <animateMotion dur="7s" repeatCount="indefinite" begin="-2s" data-page-node-id="9rYQ45AHQmEUJThLJq8MKP"><mpath href="#op" xlink:href="#op" data-page-node-id="OBGGjO89Vlsf8Uq4bVKms4"/></animateMotion>
           </circle>
         </svg>
 
         <!-- 中心 -->
-        <div class="core">
-          <div class="halo"></div>
-          <div class="spinring"></div>
-          <div class="spinring r2"></div>
-          <img class="logo" src="1.中国航天logo_透明.png" alt="中国航天 CASC" />
+        <div class="core" data-page-node-id="CFGVTbmgXOg24pMyyMUtZw">
+          <div class="halo" data-page-node-id="IuySLh8rt99Nb6o8oSkIgQ"></div>
+          <div class="spinring" data-page-node-id="VKF0j47x4Vl6odZzAJutZT"></div>
+          <div class="spinring r2" data-page-node-id="FMyNUIAYnyoO1PwqhDvMTy"></div>
+          <img class="logo" src="1.中国航天logo_透明.png" alt="中国航天 CASC" data-page-node-id="UeNJNAaB5DPAmWCqdvGh3o" />
         </div>
 
         <!-- 五个节点 -->
-        <div class="node" data-i="0" data-key="弹"><i class="npulse"></i><i class="nring"></i>
-          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
-            <path d="M32 8 L37 20 L37 44 L32 52 L27 44 L27 20 Z"/>
-            <path d="M27 40 L15 51 L15 44 L27 35"/>
-            <path d="M37 40 L49 51 L49 44 L37 35"/>
-            <path d="M32 54 L28 61 L36 61 Z" fill="#ffc247" stroke="none"/>
+        <div class="node" data-i="0" data-key="弹" data-page-node-id="ZGH2lbGVoJblBmCY9dtGyb"><i class="npulse" data-page-node-id="UeZKe4j4yBt3MZAyQs9C2F"></i><i class="nring" data-page-node-id="yzEf28dkbb6v7U1JIsQZDK"></i>
+          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="hZAWO3WIgjQxbieDfSdDaN">
+            <path d="M32 8 L37 20 L37 44 L32 52 L27 44 L27 20 Z" data-page-node-id="Epm5VLST5cjxKuHXG0ahjM"/>
+            <path d="M27 40 L15 51 L15 44 L27 35" data-page-node-id="ok1qCz86pcqniPXg2YxWMG"/>
+            <path d="M37 40 L49 51 L49 44 L37 35" data-page-node-id="yuxJPXBvtkgabaxVE9Y3Tw"/>
+            <path d="M32 54 L28 61 L36 61 Z" fill="#ffc247" stroke="none" data-page-node-id="EeKwta7ZiPB7Z5oPR6PGdi"/>
           </svg>
-          <div class="nm">弹</div><div class="nb"><em class="num">42</em>型号</div>
+          <div class="nm" data-page-node-id="jfjSGZpKhkMXgjVGa5yvxK">弹</div><div class="nb" data-page-node-id="8gARCnvT45Vz9Btvy4RBOH"><em class="num" data-page-node-id="Fsv5OygxWm5VEX6Q1Sgwci">42</em>型号</div>
         </div>
 
-        <div class="node" data-i="1" data-key="箭"><i class="npulse"></i><i class="nring"></i>
-          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
-            <path d="M32 6 C39 15 41 24 41 32 L41 44 L23 44 L23 32 C23 24 25 15 32 6 Z"/>
-            <path d="M23 36 L14 47 L14 53 L23 49"/>
-            <path d="M41 36 L50 47 L50 53 L41 49"/>
-            <path d="M27 47 L32 60 L37 47 Z" fill="#ffc247" stroke="none"/>
-            <circle cx="32" cy="28" r="4" fill="rgba(143,240,255,.25)"/>
+        <div class="node" data-i="1" data-key="箭" data-page-node-id="UKmDjC329WVdHxBpKRigre"><i class="npulse" data-page-node-id="0FQnG1dEaQpmNj3Vx69Jt6"></i><i class="nring" data-page-node-id="bNU7BiigowOwIhD2vlWU75"></i>
+          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="yGdSyMqniPoxUU1XVwYurw">
+            <path d="M32 6 C39 15 41 24 41 32 L41 44 L23 44 L23 32 C23 24 25 15 32 6 Z" data-page-node-id="bYedR69KmrtWgqnNGRSeuX"/>
+            <path d="M23 36 L14 47 L14 53 L23 49" data-page-node-id="Zc31zQzCsbIGoHvfFcXJDA"/>
+            <path d="M41 36 L50 47 L50 53 L41 49" data-page-node-id="1uiS3h9lHxBu3Isu3uH2UH"/>
+            <path d="M27 47 L32 60 L37 47 Z" fill="#ffc247" stroke="none" data-page-node-id="DsebBQfnrEMFtrAbNwv50Y"/>
+            <circle cx="32" cy="28" r="4" fill="rgba(143,240,255,.25)" data-page-node-id="aLCVacKGunlxvQ1iErEbep"/>
           </svg>
-          <div class="nm">箭</div><div class="nb"><em class="num">18</em>型号</div>
+          <div class="nm" data-page-node-id="v4AxGXBebJXUaK3zrQNw5C">箭</div><div class="nb" data-page-node-id="ThC7RIyrylCSHSfhRf7IeH"><em class="num" data-page-node-id="FamhSEnQGydpwxroCfnU5I">18</em>型号</div>
         </div>
 
-        <div class="node" data-i="2" data-key="星"><i class="npulse"></i><i class="nring"></i>
-          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
-            <rect x="26" y="23" width="12" height="18" rx="2"/>
-            <rect x="5" y="27" width="18" height="11"/>
-            <rect x="41" y="27" width="18" height="11"/>
-            <path d="M23 27 L5 27 M23 38 L5 38 M41 27 L59 27 M41 38 L59 38" stroke-width="1"/>
-            <path d="M32 23 L32 12"/>
-            <path d="M23 9 A11 11 0 0 1 41 9 Z" fill="rgba(143,240,255,.25)"/>
+        <div class="node" data-i="2" data-key="星" data-page-node-id="DozKI4ndyFrKYMPIObWnhN"><i class="npulse" data-page-node-id="dym5sLJ4vNZ6DHg9CBNhMT"></i><i class="nring" data-page-node-id="W7LPVukukAwMcHLhpSEIRV"></i>
+          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="C8xgcvByb7BIEZvYsjt5WW">
+            <rect x="26" y="23" width="12" height="18" rx="2" data-page-node-id="DOZdALLkMsStUAxEy64txF"/>
+            <rect x="5" y="27" width="18" height="11" data-page-node-id="mQuap8F92CtnlwTUNznJDV"/>
+            <rect x="41" y="27" width="18" height="11" data-page-node-id="DY3Iyj7RNIIRosMrExWSSx"/>
+            <path d="M23 27 L5 27 M23 38 L5 38 M41 27 L59 27 M41 38 L59 38" stroke-width="1" data-page-node-id="xhcHC2njptW7lK81YylOQn"/>
+            <path d="M32 23 L32 12" data-page-node-id="LbWCQSk4VNX8ToeUHIN28E"/>
+            <path d="M23 9 A11 11 0 0 1 41 9 Z" fill="rgba(143,240,255,.25)" data-page-node-id="Ur0HyGmH3ZVe8b8Dl7j7Jp"/>
           </svg>
-          <div class="nm">星</div><div class="nb"><em class="num">132</em>在轨</div>
+          <div class="nm" data-page-node-id="Qdo9yaqmdI7S6yWU4wT9v4">星</div><div class="nb" data-page-node-id="iDgwbpYxc9r5XrZJxNY0lg"><em class="num" data-page-node-id="lMc6fOvS5Mnk4yAF6eFRQM">132</em>在轨</div>
         </div>
 
-        <div class="node" data-i="3" data-key="船"><i class="npulse"></i><i class="nring"></i>
-          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
-            <path d="M25 17 L39 17 L43 29 L21 29 Z"/>
-            <rect x="23" y="29" width="18" height="15" rx="3"/>
-            <path d="M27 17 L27 11 L37 11 L37 17"/>
-            <rect x="2" y="20" width="17" height="12"/><rect x="45" y="20" width="17" height="12"/>
-            <path d="M19 26 L21 26 M45 26 L43 26"/>
-            <circle cx="32" cy="36" r="3" fill="#ffc247" stroke="none"/>
+        <div class="node" data-i="3" data-key="传" data-page-node-id="HyRyVveStEBRRalg8MvGOt"><i class="npulse" data-page-node-id="3Pjzh0dfSuZG2Btiapbp6b"></i><i class="nring" data-page-node-id="jx8YGjSXCvXzBERQvO3vta"></i>
+          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="o4nllPr04cr0eXvrLCTpEm">
+            <path d="M25 17 L39 17 L43 29 L21 29 Z" data-page-node-id="Kn3SkQsOWjsGBkr9nmNARi"/>
+            <rect x="23" y="29" width="18" height="15" rx="3" data-page-node-id="JPmmGScjxBiCwlU91atMeZ"/>
+            <path d="M27 17 L27 11 L37 11 L37 17" data-page-node-id="hNSF2XQY0ZTbo6IJUOS42I"/>
+            <rect x="2" y="20" width="17" height="12" data-page-node-id="oWRVHkrPddmspbexFbBLkq"/><rect x="45" y="20" width="17" height="12" data-page-node-id="IB7FYMHVprqfkOCvULJC4c"/>
+            <path d="M19 26 L21 26 M45 26 L43 26" data-page-node-id="oAf4EjdUxAxIygkrk0Px22"/>
+            <circle cx="32" cy="36" r="3" fill="#ffc247" stroke="none" data-page-node-id="yhQAuzIjqg6FEl3kgw6zau"/>
           </svg>
-          <div class="nm">船</div><div class="nb"><em class="num">3</em>在轨</div>
+          <div class="nm" data-page-node-id="8KKb3yz2JV5pr8oZoPQ1Sx">传</div><div class="nb" data-page-node-id="bf9POnYZee0Ka24rtQK1gX"><em class="num" data-page-node-id="2pkYPmvhjoPRiG9WmD9bPo">3</em>在轨</div>
         </div>
 
-        <div class="node" data-i="4" data-key="器"><i class="npulse"></i><i class="nring"></i>
-          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
-            <circle cx="32" cy="28" r="12"/>
-            <path d="M32 16 L32 8"/>
-            <path d="M20 9 A13 13 0 0 1 44 9 Z" fill="rgba(143,240,255,.25)"/>
-            <path d="M22 38 L14 55 M42 38 L50 55"/>
-            <path d="M14 55 L9 55 M50 55 L55 55"/>
-            <circle cx="32" cy="28" r="4" fill="#ffc247" stroke="none"/>
+        <div class="node" data-i="4" data-key="器" data-page-node-id="kRSFDIxFv5kkdnO7vjnYRv"><i class="npulse" data-page-node-id="xqFgDlnVnlMQORIrMMwhu3"></i><i class="nring" data-page-node-id="gohRk6C5jHa1z8kH4CoB08"></i>
+          <svg viewBox="0 0 64 64" fill="none" stroke="#8ff0ff" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" data-page-node-id="jq5ETyxBXdbsGtfPdtCnUW">
+            <circle cx="32" cy="28" r="12" data-page-node-id="nrkyvYpibMWpu10jm9FGWI"/>
+            <path d="M32 16 L32 8" data-page-node-id="BMWEGivCM4R3rEZIqAGhEK"/>
+            <path d="M20 9 A13 13 0 0 1 44 9 Z" fill="rgba(143,240,255,.25)" data-page-node-id="XkoM02URQLs9zr3LinOdMr"/>
+            <path d="M22 38 L14 55 M42 38 L50 55" data-page-node-id="kZ6AolB8WjojjhNyCyNAzp"/>
+            <path d="M14 55 L9 55 M50 55 L55 55" data-page-node-id="RZHmOGQ0vScMNmnDuDky0F"/>
+            <circle cx="32" cy="28" r="4" fill="#ffc247" stroke="none" data-page-node-id="yS3L46gydC8DLIU7dt0P7V"/>
           </svg>
-          <div class="nm">器</div><div class="nb"><em class="num">5</em>在轨</div>
+          <div class="nm" data-page-node-id="gzMRM7qOtNHqphqKQGxLii">器</div><div class="nb" data-page-node-id="UZd8iA4201h4X1PROkuu0C"><em class="num" data-page-node-id="ZJRaolQSxhu0qHV3jKeNeF">5</em>在轨</div>
         </div>
       </div>
 
-      <div class="center-foot">
-        <div class="cf"><div class="cv"><i></i><b class="num" data-count="141">0</b></div><span>在轨飞行器</span></div>
-        <div class="cf"><div class="cv"><i></i><b class="num" data-count="48">0</b></div><span>年度发射</span></div>
-        <div class="cf"><div class="cv"><i></i><b class="num" data-count="65">0</b></div><span>在研型号</span></div>
-        <div class="cf"><div class="cv"><i></i><b class="num" data-count="14">0</b></div><span>地面测控站</span></div>
+      <div class="center-foot" data-page-node-id="H3G6RP5aTBDH3UjnUPbf2x">
+        <div class="cf" data-page-node-id="BYlzgtT6JtyE5LOLr0GMP6"><div class="cv" data-page-node-id="nyrrGYHC08HX4O8zpZmnHw"><i data-page-node-id="E2hw6oirs9GU2kNeWkTNtB"></i><b class="num" data-count="141" data-page-node-id="kKGCFKkiqjKCp9nujwfV6g">0</b></div><span data-page-node-id="rRvFpTfvj6A50bg0E6YiXu">在轨飞行器</span></div>
+        <div class="cf" data-page-node-id="BiKS8RyZCg7ulfDIv3OXel"><div class="cv" data-page-node-id="hwM3RkYxs0DUYn7QCGKSjG"><i data-page-node-id="r2vbgwl1yPFKcAregGRlhZ"></i><b class="num" data-count="48" data-page-node-id="LupcF2ZDTRzIUDsVV0aI3v">0</b></div><span data-page-node-id="axedhAuQb6L8ZK5CL5afO6">年度发射</span></div>
+        <div class="cf" data-page-node-id="A4OwmD3nc5yQF60Hz1c4yr"><div class="cv" data-page-node-id="N9srs98lf2es5VNmCN6SOX"><i data-page-node-id="QfmDoalKo39T4sEyOgRdy2"></i><b class="num" data-count="65" data-page-node-id="ScH61ABFtnAwC1qQGcy6v0">0</b></div><span data-page-node-id="mSL9McpizgdurRXTInyHaC">在研型号</span></div>
+        <div class="cf" data-page-node-id="1Xo5hwkUF9jKJzsMOhO82s"><div class="cv" data-page-node-id="o7m8RDETYQhRlssiQuoZYp"><i data-page-node-id="n0eV1Se9WPnP8SAqI78YjI"></i><b class="num" data-count="14" data-page-node-id="HvjGx6hZRTa9bht1ETTo2L">0</b></div><span data-page-node-id="Ajk6zIYKC6VHcA9Gsa5Ja1">地面测控站</span></div>
       </div>
     </div>
 
     <!-- ---------- 右列 ---------- -->
-    <div class="col right">
+    <div class="col right" data-page-node-id="s7gU4FZGMcP0pHsVSEtY2E">
       <!-- 04 型号科研生产 -->
-      <section class="card">
-        <i class="cnr tl"></i><i class="cnr tr"></i><i class="cnr bl"></i><i class="cnr br"></i>
-        <div class="card-hd"><span class="idx num">04</span>
-          <div class="tt"><h2>型号科研生产</h2></div>
-          <div class="eq"><i></i><i></i><i></i><i></i></div>
-          <span class="tag">进度</span>
+      <section class="card" data-page-node-id="80ULAaWOQADm23ph4FyhDH">
+        <i class="cnr tl" data-page-node-id="AOb4YxRmnUigPBe9iNTTEU"></i><i class="cnr tr" data-page-node-id="GOgLIhQUZkcOzCHmLChZHV"></i><i class="cnr bl" data-page-node-id="brI2bllbSxzjNsgDXXo3pr"></i><i class="cnr br" data-page-node-id="CFDYCbAGPTV0XI9TmxljEp"></i>
+        <div class="card-hd" data-page-node-id="62pV8n4jbx5c1aQRhbvXn1"><span class="idx num" data-page-node-id="mD65saJsVyH1X0EzNLKREB">04</span>
+          <div class="tt" data-page-node-id="4Akcj4h1xMapL9s0NctmQr"><h2 data-page-node-id="F0uOnVYHr5HXm2ksmGeltt">型号科研生产</h2></div>
+          <div class="eq" data-page-node-id="ie6jTbdzSLquNxbOKk4MjH"><i data-page-node-id="dnlCpjgGKvScbpFpoUNgJS"></i><i data-page-node-id="CAayB43iwEDVCupMqHf7NF"></i><i data-page-node-id="cgTflx9ZVwDpkllWdkOWkY"></i><i data-page-node-id="RfTGQvhN9QXWKkKrfPtepB"></i></div>
+          <span class="tag" data-page-node-id="QugdguIwHKBoWDFlsLJHv8">进度</span>
         </div>
-        <div class="card-bd">
-          <div class="kpi-row" style="margin-bottom:11px;">
-            <div class="kpi"><div class="lb">在研型号</div><div class="vl num"><span data-count="65">0</span><small>项</small></div></div>
-            <div class="kpi"><div class="lb">按期完成</div><div class="vl num" style="color:var(--ok)"><span data-count="58">0</span><small>项</small></div></div>
-            <div class="kpi"><div class="lb">风险项</div><div class="vl num" style="color:var(--warn)"><span data-count="4">0</span><small>项</small></div></div>
+        <div class="card-bd" data-page-node-id="olD7UvOJEN0SdR8qPa7wOd">
+          <div class="kpi-row" style="margin-bottom:11px;" data-page-node-id="EZ3PKtERBalayv0pRJBsXM">
+            <div class="kpi" data-page-node-id="GewMcBe8DFBh0ng7HpHZLN"><div class="lb" data-page-node-id="owbw4EYBUjCDdegwkRe7Bg">在研型号</div><div class="vl num" data-page-node-id="ewNJyhBtZeAut2XcFDZXKr"><span data-count="65" data-page-node-id="D4TEDHnpiQhEViJfTV7iqz">0</span><small data-page-node-id="yP5EtJPB2blrh17KIypnFQ">项</small></div></div>
+            <div class="kpi" data-page-node-id="3UqdNqWtgmshYWSWxA31G4"><div class="lb" data-page-node-id="qBqYaRcumAFA21tGZO2RDQ">按期完成</div><div class="vl num" style="color:var(--ok)" data-page-node-id="sAOknWeOfyYv29iGMiDIKR"><span data-count="58" data-page-node-id="Al4jgOWyRP6RZDG3lFYdnc">0</span><small data-page-node-id="tO9woHMSO3JeD6f4KxW1KT">项</small></div></div>
+            <div class="kpi" data-page-node-id="YoEDexH7LASRqwPpMwJ0z3"><div class="lb" data-page-node-id="Ynu7BnCllP6nNRk7xeH7zh">风险项</div><div class="vl num" style="color:var(--warn)" data-page-node-id="zYDcOFJnfMQsPnXMb8ZKGh"><span data-count="4" data-page-node-id="tmmMCrZQhJLLM92OOzduLl">0</span><small data-page-node-id="hAuDktsYhnuYS5b2oWoZVo">项</small></div></div>
           </div>
-          <div class="plist">
-            <div class="pitem"><div class="pt">弹 · 某型战术导弹 <b class="num" data-count="88" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:88%"></div></div></div>
-            <div class="pitem"><div class="pt">箭 · 新一代运载火箭 <b class="num" data-count="76" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:76%"></div></div></div>
-            <div class="pitem"><div class="pt">星 · 遥感卫星星座 <b class="num" data-count="64" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:64%;background:linear-gradient(90deg,#0a62c8,#25d68a)"></div></div></div>
-            <div class="pitem"><div class="pt">船 · 载人飞船批产 <b class="num" data-count="92" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:92%"></div></div></div>
-            <div class="pitem"><div class="pt">器 · 深空探测器 <b class="num" data-count="53" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:53%;background:linear-gradient(90deg,#8a5a00,#ffc247)"></div></div></div>
+          <div class="plist" data-page-node-id="CgSy2fN0AsqA8xriqtKSbJ">
+            <div class="pitem" data-page-node-id="Z6haD8cLiXXxI9NslPsJ6W"><div class="pt" data-page-node-id="lM3wJzt9A1zkt01wHbBQhG">弹 · 某型战术导弹 <b class="num" data-count="88" data-suf="%" data-page-node-id="Zbz2awKtoRlWCZrch8RVaV">0</b></div>
+              <div class="ptrack" data-page-node-id="kT8H6uqgmGOwoE7eQpezf7"><div class="pfill" style="--w:88%" data-page-node-id="CY2pqUEU8gasEGNuWUaRTS"></div></div></div>
+            <div class="pitem" data-page-node-id="QtUDAcdyAdbCZcNxGNqVII"><div class="pt" data-page-node-id="CsgJbgdJch28SgBhnEBnks">箭 · 新一代运载火箭 <b class="num" data-count="76" data-suf="%" data-page-node-id="2xvuvtURxKSqycSELderEK">0</b></div>
+              <div class="ptrack" data-page-node-id="BAQCNCohnHjOvD1sK4mihl"><div class="pfill" style="--w:76%" data-page-node-id="c0sAFSOBccA1XLzYIVSbSP"></div></div></div>
+            <div class="pitem" data-page-node-id="OezhmXmvFCVvZc4TCDJO7j"><div class="pt" data-page-node-id="DJUxrUHi7ytNtjJ3cP6uGn">星 · 遥感卫星星座 <b class="num" data-count="64" data-suf="%" data-page-node-id="vHsA2Sxtm2mausVa68DQLM">0</b></div>
+              <div class="ptrack" data-page-node-id="aHum343uBEJTK0KWcea8Ts"><div class="pfill" style="--w:64%;background:linear-gradient(90deg,#0a62c8,#25d68a)" data-page-node-id="3JbYFWWp82VUsDJBtesHjF"></div></div></div>
+            <div class="pitem" data-page-node-id="VrXGJt295GsrFskwN9Pi17"><div class="pt" data-page-node-id="dooBCzS8ZSYbBt7LGEXYv2">传 · 中继卫星组网 <b class="num" data-count="92" data-suf="%" data-page-node-id="069DhuGD1268fSG1XWtQpX">0</b></div>
+              <div class="ptrack" data-page-node-id="ZxnneWqXXb2R3yjjgZ6PZd"><div class="pfill" style="--w:92%" data-page-node-id="lRDNFMwGlI3DxRB4K2Nty0"></div></div></div>
+            <div class="pitem" data-page-node-id="P6VwPl3cDZ42slUOPT99Wz"><div class="pt" data-page-node-id="Ugh822RUQyv2WygqrMuKJ9">器 · 深空探测器 <b class="num" data-count="53" data-suf="%" data-page-node-id="GMyZJVZ0asVfR6O2dN848F">0</b></div>
+              <div class="ptrack" data-page-node-id="0fvmfYpShA3Ekd5bJyw8On"><div class="pfill" style="--w:53%;background:linear-gradient(90deg,#8a5a00,#ffc247)" data-page-node-id="DoYEcVL6mr9zPZaY4SGLMH"></div></div></div>
           </div>
         </div>
       </section>
 
       <!-- 05 质量与可靠性 -->
-      <section class="card">
-        <i class="cnr tl"></i><i class="cnr tr"></i><i class="cnr bl"></i><i class="cnr br"></i>
-        <div class="card-hd"><span class="idx num">05</span>
-          <div class="tt"><h2>质量与可靠性</h2></div>
-          <div class="eq"><i></i><i></i><i></i><i></i></div>
-          <span class="tag">月度</span>
+      <section class="card" data-page-node-id="G3WbxF2pD8Vt21BBzhrDwx">
+        <i class="cnr tl" data-page-node-id="rjQW77NJpIAFCoYaKVZCj6"></i><i class="cnr tr" data-page-node-id="Jhi0AJukGMTcuMeogAYlqy"></i><i class="cnr bl" data-page-node-id="t2QPoLNCapMjEFJVA2QAev"></i><i class="cnr br" data-page-node-id="l3ZDrrKIXgVs90dCjeE9Dq"></i>
+        <div class="card-hd" data-page-node-id="Y7ZfHxAsd5dGRXFNjYfFUc"><span class="idx num" data-page-node-id="YEjE3lawft3rZ6Ko9rJH9B">05</span>
+          <div class="tt" data-page-node-id="6GlT7LHnBleoBZCt8px4pw"><h2 data-page-node-id="yJjcYsPuhjv8tW2iUnGFYc">质量与可靠性</h2></div>
+          <div class="eq" data-page-node-id="bq9iNe5PZcRJVS09uyDXUv"><i data-page-node-id="mp7QFfMEMEEgtHnktgnRYZ"></i><i data-page-node-id="GPhWsE3qJ08FXx1BEEfitv"></i><i data-page-node-id="97laQvSYSFVWlBp3iI70CY"></i><i data-page-node-id="OO8yyzNAl7dU5QJ2H5p1GO"></i></div>
+          <span class="tag" data-page-node-id="uQiyMVh0iMqbVLP5dZGSia">月度</span>
         </div>
-        <div class="card-bd">
-          <div class="kpi-row" style="margin-bottom:8px;">
-            <div class="kpi"><div class="lb">质量问题</div><div class="vl num" style="color:var(--bad)"><span data-count="3">0</span><small>项</small></div><div class="dt down">▼ 2 环比</div></div>
-            <div class="kpi"><div class="lb">归零完成率</div><div class="vl num" style="color:var(--ok)"><span data-count="100">0</span><small>%</small></div><div class="dt down">持平</div></div>
-            <div class="kpi"><div class="lb">可靠性指标</div><div class="vl num"><span data-count="0.996" data-dec="3">0</span></div><div class="dt up">▲ 0.001</div></div>
+        <div class="card-bd" data-page-node-id="aG1CL7BEogKGV8Qr4hgO8X">
+          <div class="kpi-row" style="margin-bottom:8px;" data-page-node-id="nxHAvVMwEgYsoLuD7Wr3kK">
+            <div class="kpi" data-page-node-id="hsyDV1xfcPBFRZfGqcAZI6"><div class="lb" data-page-node-id="DkWebIs9Wulb8H6ZCsu4BG">质量问题</div><div class="vl num" style="color:var(--bad)" data-page-node-id="ZHZIGY0ubL9JYPtjBvF4PH"><span data-count="3" data-page-node-id="HttX7E2YHCwFK5Nxt4MLye">0</span><small data-page-node-id="IphwW066qil3w0LIccYO4F">项</small></div><div class="dt down" data-page-node-id="uUj6P7fvpFcby3JzokY0QN">▼ 2 环比</div></div>
+            <div class="kpi" data-page-node-id="ED7rQuTim41ai3Y8gJkjTA"><div class="lb" data-page-node-id="lzTUV8NW1hHEBt3yXk8lLt">归零完成率</div><div class="vl num" style="color:var(--ok)" data-page-node-id="N9BKudJGEoZcxuisClyFwN"><span data-count="100" data-page-node-id="47GLLGA887wWKA2NJGe7tE">0</span><small data-page-node-id="G2uODt3SMSXsLInK8WqwGR">%</small></div><div class="dt down" data-page-node-id="fqt6jqfGOafUrF71L9hKm7">持平</div></div>
+            <div class="kpi" data-page-node-id="YRGiNdevYHfrHbpZzR8hwH"><div class="lb" data-page-node-id="rUnNWugR0tyAvJkjHWgcs7">可靠性指标</div><div class="vl num" data-page-node-id="4s1z5jJCohIQYIvqQ5M9jG"><span data-count="0.996" data-dec="3" data-page-node-id="pevRBYKsiTA4ajt4FKQTFs">0</span></div><div class="dt up" data-page-node-id="ffKJV0TShI2AkbVzKX9q4D">▲ 0.001</div></div>
           </div>
-          <div style="font-size:10.5px;color:#74a8d6;letter-spacing:1.5px;margin-bottom:2px;">近 12 月质量问题趋势</div>
-          <div class="spark">
-            <svg viewBox="0 0 300 82" preserveAspectRatio="none">
-              <defs>
-                <linearGradient id="ar1" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#00e5ff" stop-opacity=".38"/>
-                  <stop offset="100%" stop-color="#00e5ff" stop-opacity="0"/>
+          <div style="font-size:10.5px;color:#74a8d6;letter-spacing:1.5px;margin-bottom:2px;" data-page-node-id="HWH3oAg8DbRqMdSA1zk9KU">近 12 月质量问题趋势</div>
+          <div class="spark" data-page-node-id="2Veo25XC2TTms1U5xqrbdN">
+            <svg viewBox="0 0 300 82" preserveAspectRatio="none" data-page-node-id="tRLmD32dYBP4v56HgMSaXA">
+              <defs data-page-node-id="eAEH9UjwHLf7EYuzLRVOSd">
+                <linearGradient id="ar1" x1="0" y1="0" x2="0" y2="1" data-page-node-id="esttvA7U52GD6mEy5ACWHH">
+                  <stop offset="0%" stop-color="#00e5ff" stop-opacity=".38" data-page-node-id="G4EYoJwMFJ9oE2K702szhX"/>
+                  <stop offset="100%" stop-color="#00e5ff" stop-opacity="0" data-page-node-id="WIW24am3xlFnaCvjj2RKA8"/>
                 </linearGradient>
               </defs>
-              <path d="M4 22 L31 30 L58 16 L85 38 L112 26 L139 46 L166 34 L193 54 L220 44 L247 58 L274 50 L298 56 L298 82 L4 82 Z" fill="url(#ar1)"/>
+              <path d="M4 22 L31 30 L58 16 L85 38 L112 26 L139 46 L166 34 L193 54 L220 44 L247 58 L274 50 L298 56 L298 82 L4 82 Z" fill="url(#ar1)" data-page-node-id="aXo2TumKLIzU98KnhwmmLU"/>
               <polyline points="4,22 31,30 58,16 85,38 112,26 139,46 166,34 193,54 220,44 247,58 274,50 298,56"
                 fill="none" stroke="#00e5ff" stroke-width="1.8" stroke-dasharray="620" stroke-dashoffset="620"
-                style="animation:draw 2s cubic-bezier(.3,.8,.3,1) .6s forwards; filter:drop-shadow(0 0 5px rgba(0,229,255,.8))"/>
+                style="animation:draw 2s cubic-bezier(.3,.8,.3,1) .6s forwards; filter:drop-shadow(0 0 5px rgba(0,229,255,.8))" data-page-node-id="Sm9vvlMJm7nn3t1BgESxRO"/>
             </svg>
-            <span class="tip"></span>
+            <span class="tip" data-page-node-id="7XhHDVvB4GVJEj9amKNHps"></span>
           </div>
-          <div class="push-bot" style="display:flex;gap:12px;font-size:11px;color:#74a8d6;">
-            <div>平均故障间隔 <b class="num" style="color:var(--c1);font-size:15px">1,860</b> h</div>
-            <div>一次交付合格 <b class="num" style="color:var(--ok);font-size:15px">98.7%</b></div>
-            <div style="margin-left:auto">评审通过 <b class="num" style="color:var(--c3);font-size:15px">26</b></div>
+          <div class="push-bot" style="display:flex;gap:12px;font-size:11px;color:#74a8d6;" data-page-node-id="bjIgnrQVpxQhFd0OFiuEte">
+            <div data-page-node-id="9wtYoVtiY450RSAQzLFOJy">平均故障间隔 <b class="num" style="color:var(--c1);font-size:15px" data-page-node-id="o4lszwSgWLXsKOZGHCExpO">1,860</b> h</div>
+            <div data-page-node-id="kjSfgAcnbmpcFThEexHdjf">一次交付合格 <b class="num" style="color:var(--ok);font-size:15px" data-page-node-id="vTzQGgwBL9DV7oTC3UJ2Ex">98.7%</b></div>
+            <div style="margin-left:auto" data-page-node-id="3HBBV2Hx58vcXQ3J5OteXl">评审通过 <b class="num" style="color:var(--c3);font-size:15px" data-page-node-id="jfm7hNTDXKl8GbJJtNUEFn">26</b></div>
           </div>
         </div>
       </section>
 
       <!-- 06 保障与资源 -->
-      <section class="card">
-        <i class="cnr tl"></i><i class="cnr tr"></i><i class="cnr bl"></i><i class="cnr br"></i>
-        <div class="card-hd"><span class="idx num">06</span>
-          <div class="tt"><h2>保障与资源</h2></div>
-          <div class="eq"><i></i><i></i><i></i><i></i></div>
-          <span class="tag">实时</span>
+      <section class="card" data-page-node-id="TPRHic2PQ2a3Z9OjaJMmxi">
+        <i class="cnr tl" data-page-node-id="iwL1PcdZjbYRPrm00tuKNl"></i><i class="cnr tr" data-page-node-id="BEvIKpnFIJIiul9MfbAo4g"></i><i class="cnr bl" data-page-node-id="Jq56XwcM2XFvukzBYNPk1P"></i><i class="cnr br" data-page-node-id="yGwpEFe5UVAkjOxCdAALyd"></i>
+        <div class="card-hd" data-page-node-id="uPWMBHtXQ0pgANK6WIAHSw"><span class="idx num" data-page-node-id="ayVwiHp5Y6ARNkzC6OTv7G">06</span>
+          <div class="tt" data-page-node-id="uYsAGLLE3Jx4A2A0TZ5BWr"><h2 data-page-node-id="mitN9SGUwFdYrDRrR2aQwF">保障与资源</h2></div>
+          <div class="eq" data-page-node-id="a0RKgbOGqSMq3Q1cbwvwal"><i data-page-node-id="zW5AvMUNZ3H7ZUAIgHMJQD"></i><i data-page-node-id="ZKloBMDe8gosZX7r67vcg7"></i><i data-page-node-id="eQkBHiDCzkTZvEjHTTQm04"></i><i data-page-node-id="HQYlFASJqCFLmEZHfHVQG6"></i></div>
+          <span class="tag" data-page-node-id="aHgbCvZZwsBjFTghF19eew">实时</span>
         </div>
-        <div class="card-bd">
-          <div class="kpi-row" style="margin-bottom:10px;">
-            <div class="kpi"><div class="lb">在岗人员</div><div class="vl num"><span data-count="1248" data-comma="1">0</span><small>人</small></div></div>
-            <div class="kpi"><div class="lb">厂房利用</div><div class="vl num" style="color:var(--c3)"><span data-count="86.3" data-dec="1">0</span><small>%</small></div></div>
-            <div class="kpi"><div class="lb">设备完好</div><div class="vl num" style="color:var(--ok)"><span data-count="94.8" data-dec="1">0</span><small>%</small></div></div>
+        <div class="card-bd" data-page-node-id="vx10Rhi7pD0dyHDAmB45Ki">
+          <div class="kpi-row" style="margin-bottom:10px;" data-page-node-id="QHSOL38hmcWAIrCpAACD4H">
+            <div class="kpi" data-page-node-id="DxRR1aM6apxqjF2gMgpnHr"><div class="lb" data-page-node-id="SLZ02AaGCxgaUq8IVBIkYd">在岗人员</div><div class="vl num" data-page-node-id="xxzJ2ZbctLq4qBVYQXym6k"><span data-count="1248" data-comma="1" data-page-node-id="C50xdaKuAaYCOpC1u6CBNG">0</span><small data-page-node-id="80bbixctJQQuOxU9oKEGTv">人</small></div></div>
+            <div class="kpi" data-page-node-id="bYHsOKTAJjbGUjfZh2TXbf"><div class="lb" data-page-node-id="ec82Ct5TLIWY82EiaKGqvz">厂房利用</div><div class="vl num" style="color:var(--c3)" data-page-node-id="bSESqyR1bIrYyls8P7j2g1"><span data-count="86.3" data-dec="1" data-page-node-id="AMliIg8y0eq4nhKzGcw7Gg">0</span><small data-page-node-id="87bgoORECA7NSNXNjzNyrt">%</small></div></div>
+            <div class="kpi" data-page-node-id="yY1kGeBk5foQbz988sZxNG"><div class="lb" data-page-node-id="NHnKpTfx245tedmypRB69Q">设备完好</div><div class="vl num" style="color:var(--ok)" data-page-node-id="WuMlWdmqSEv3U3TQFxY8AL"><span data-count="94.8" data-dec="1" data-page-node-id="xldCvHCx55sPTVyBpwJ3Oy">0</span><small data-page-node-id="rZxOyeD1NyAspZzS2odNvw">%</small></div></div>
           </div>
-          <div class="plist">
-            <div class="pitem"><div class="pt">经费执行率 <b class="num" data-count="71.5" data-dec="1" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:71.5%;background:linear-gradient(90deg,#8a5a00,#ffc247)"></div></div></div>
-            <div class="pitem"><div class="pt">物资配套率 <b class="num" data-count="89.2" data-dec="1" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:89.2%"></div></div></div>
-            <div class="pitem"><div class="pt">试验保障到位 <b class="num" data-count="95.6" data-dec="1" data-suf="%">0</b></div>
-              <div class="ptrack"><div class="pfill" style="--w:95.6%;background:linear-gradient(90deg,#0a62c8,#25d68a)"></div></div></div>
+          <div class="plist" data-page-node-id="h5SnoVpaBVKSeBdQUYHA2s">
+            <div class="pitem" data-page-node-id="BG5MyKPAWo2Hdnee982lu7"><div class="pt" data-page-node-id="Gi73CXTLXswJIFnTaBkl6F">经费执行率 <b class="num" data-count="71.5" data-dec="1" data-suf="%" data-page-node-id="GlMW1CflFtHZVElUUc0yNY">0</b></div>
+              <div class="ptrack" data-page-node-id="MJVGxi2Ta3dgiG6RhFNR44"><div class="pfill" style="--w:71.5%;background:linear-gradient(90deg,#8a5a00,#ffc247)" data-page-node-id="uUD7yRxhoKnE7PpyJ7tmQL"></div></div></div>
+            <div class="pitem" data-page-node-id="xVS6Ro4pSpwsX16KbcscTc"><div class="pt" data-page-node-id="04YqZrEHYi7d0Lr1tbd6ce">物资配套率 <b class="num" data-count="89.2" data-dec="1" data-suf="%" data-page-node-id="Ab9IG72DD9OT0IT7f89uQK">0</b></div>
+              <div class="ptrack" data-page-node-id="4u0Zu7uksHGdMhbGJaosYf"><div class="pfill" style="--w:89.2%" data-page-node-id="WR8EJ5aSEQmuQPJbLR27pz"></div></div></div>
+            <div class="pitem" data-page-node-id="5ktegzaNClV9BxjARRweKt"><div class="pt" data-page-node-id="xIl3D28rHCEWyRBLf9bCdQ">试验保障到位 <b class="num" data-count="95.6" data-dec="1" data-suf="%" data-page-node-id="Sti8xG60A3Uycbh731nZ20">0</b></div>
+              <div class="ptrack" data-page-node-id="Bq9KhwL2slJWqJeObyGjjo"><div class="pfill" style="--w:95.6%;background:linear-gradient(90deg,#0a62c8,#25d68a)" data-page-node-id="QIJLNv67dMPyScHXhSlqWL"></div></div></div>
           </div>
-          <div style="display:flex;gap:8px;margin-top:auto;padding-top:10px;">
-            <div class="cat" style="flex:1"><b class="num" style="font-size:20px" data-count="9">0</b><span>发射工位</span></div>
-            <div class="cat" style="flex:1"><b class="num" style="font-size:20px;color:var(--ok)" data-count="4">0</b><span>总装厂</span></div>
-            <div class="cat" style="flex:1"><b class="num" style="font-size:20px;color:var(--c3)" data-count="2">0</b><span>海上发射</span></div>
+          <div style="display:flex;gap:8px;margin-top:auto;padding-top:10px;" data-page-node-id="GJZwMtxEdsNBa5cUngvZfs">
+            <div class="cat" style="flex:1" data-page-node-id="SF6D1dD8PCk3RCOO6da9vY"><b class="num" style="font-size:20px" data-count="9" data-page-node-id="ekzk2aWYYLphZBMIGNr798">0</b><span data-page-node-id="wr6BYIhqx0ci46xxG6dLfa">发射工位</span></div>
+            <div class="cat" style="flex:1" data-page-node-id="isxWjznVh2LIiHzO4pvXiv"><b class="num" style="font-size:20px;color:var(--ok)" data-count="4" data-page-node-id="Sx8IvcPK2Fl74ytxkWF9tL">0</b><span data-page-node-id="bDWaiaEkpalNz5qSzcFEo9">总装厂</span></div>
+            <div class="cat" style="flex:1" data-page-node-id="RoLFEIFibVtWAxNjHUtHTW"><b class="num" style="font-size:20px;color:var(--c3)" data-count="2" data-page-node-id="n2fCWsr31RPqyDMAnzjhZ5">0</b><span data-page-node-id="3SaWYfBqLZVUKEdGC2PiPC">海上发射</span></div>
           </div>
         </div>
       </section>
@@ -758,25 +758,23 @@ renderBars('bars1', [3,2,5,4,6,5,7,6,8,5,4,3]);
 /* ===== 五体环绕旋转 ===== */
 const area  = document.getElementById('orbitArea');
 const nodes = Array.from(area.querySelectorAll('.node'));
-const RX = 250, RY = 380;   // 竖直椭圆：上下宽、左右窄（与 SVG 轨道一致）
+const RC = 384;   // 主轨道圆形半径（viewBox 单位，与 SVG 圆一致）
 let angle = -Math.PI/2, paused = false;
 
 function layout(){
   const w = area.clientWidth, h = area.clientHeight;
-  const k = Math.min(w/600, h/900);
-  const rx = RX * k, ry = RY * k;
+  const k = Math.min(w/900, h/900);
+  const r = RC * k;   // 圆形轨道：x、y 同半径
   nodes.forEach((n, i) => {
     const a = angle + i * (Math.PI*2/5);
-    const x = Math.cos(a) * rx;
-    const y = Math.sin(a) * ry;
-    // 立起的圆环：深度由 cos 决定，右侧为近端、左侧为远端
-    const d = (Math.cos(a) + 1) / 2;
-    let sc = 0.80 + d * 0.28;
-    if(n.classList.contains('hov')) sc += 0.12;
+    const x = Math.cos(a) * r;
+    const y = Math.sin(a) * r;
+    let sc = 1;
+    if(n.classList.contains('hov')) sc = 1.12;
     n.style.transform = `translate(-50%,-50%) translate(${x}px, ${y}px) scale(${sc})`;
-    n.style.zIndex    = Math.round(60 + d * 100);
-    n.style.opacity   = (0.5 + d * 0.5).toFixed(3);
-    n.style.filter    = `brightness(${(0.62 + d*0.5).toFixed(2)})`;
+    n.style.zIndex    = 90;
+    n.style.opacity   = 1;
+    n.style.filter    = 'none';
   });
 }
 function loop(){
