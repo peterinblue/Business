@@ -131,7 +131,7 @@
 
   /* ============ 主体 ============ */
   main { position:relative; z-index:6; height:984px; display:grid;
-         grid-template-columns:1fr 1.18fr 1fr; gap:16px; padding:12px 8px 16px; }
+         grid-template-columns:0.8fr 1.58fr 0.8fr; gap:16px; padding:12px 8px 16px; }
   .col { display:flex; flex-direction:column; gap:16px; }
 
   /* ============ 卡片 ============ */
@@ -479,15 +479,15 @@
           </defs>
 
           <!-- 装饰椭圆 -->
-          <ellipse cx="300" cy="450" rx="240" ry="410" fill="none" stroke="rgba(0,150,255,.13)" stroke-width="1"/>
-          <ellipse cx="300" cy="450" rx="155" ry="325" fill="none" stroke="rgba(255,194,71,.15)" stroke-width="1" stroke-dasharray="3 9"/>
+          <ellipse cx="300" cy="450" rx="290" ry="410" fill="none" stroke="rgba(0,150,255,.13)" stroke-width="1"/>
+          <ellipse cx="300" cy="450" rx="205" ry="325" fill="none" stroke="rgba(255,194,71,.15)" stroke-width="1" stroke-dasharray="3 9"/>
           <!-- 主轨道 -->
-          <ellipse cx="300" cy="450" rx="200" ry="380" fill="none" stroke="url(#og2)" stroke-width="1.6" stroke-dasharray="9 11">
+          <ellipse cx="300" cy="450" rx="250" ry="380" fill="none" stroke="url(#og2)" stroke-width="1.6" stroke-dasharray="9 11">
             <animate attributeName="stroke-dashoffset" from="0" to="-400" dur="16s" repeatCount="indefinite"/>
           </ellipse>
 
           <!-- 轨道上流动的光点 -->
-          <path id="op" d="M 300 70 A 200 380 0 1 1 300 830 A 200 380 0 1 1 300 70" fill="none" stroke="none"/>
+          <path id="op" d="M 300 70 A 250 380 0 1 1 300 830 A 250 380 0 1 1 300 70" fill="none" stroke="none"/>
           <circle r="4.5" fill="#8ff0ff" filter="url(#glow)">
             <animateMotion dur="9s" repeatCount="indefinite" begin="0s"><mpath href="#op" xlink:href="#op"/></animateMotion>
           </circle>
@@ -758,7 +758,7 @@ renderBars('bars1', [3,2,5,4,6,5,7,6,8,5,4,3]);
 /* ===== 五体环绕旋转 ===== */
 const area  = document.getElementById('orbitArea');
 const nodes = Array.from(area.querySelectorAll('.node'));
-const RX = 200, RY = 380;   // 竖直椭圆：上下宽、左右窄（与 SVG 轨道一致）
+const RX = 250, RY = 380;   // 竖直椭圆：上下宽、左右窄（与 SVG 轨道一致）
 let angle = -Math.PI/2, paused = false;
 
 function layout(){
