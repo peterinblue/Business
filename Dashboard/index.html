@@ -77,7 +77,7 @@
   .cnr-frame.bl::after{ left:-4px; bottom:-4px; } .cnr-frame.br::after{ right:-4px; bottom:-4px; }
 
   /* ============ 顶栏 ============ */
-  header { position:relative; z-index:8; height:96px; display:flex; align-items:center; padding:0 30px; }
+  header { position:relative; z-index:8; height:96px; display:flex; align-items:center; padding:0 14px; }
   header::before{
     content:""; position:absolute; left:0; right:0; top:0; height:76px;
     background:linear-gradient(180deg, rgba(6,40,88,.85), transparent);
@@ -131,7 +131,7 @@
 
   /* ============ 主体 ============ */
   main { position:relative; z-index:6; height:984px; display:grid;
-         grid-template-columns:1fr 1.18fr 1fr; gap:16px; padding:12px 24px 16px; }
+         grid-template-columns:1fr 1.18fr 1fr; gap:16px; padding:12px 8px 16px; }
   .col { display:flex; flex-direction:column; gap:16px; }
 
   /* ============ 卡片 ============ */
@@ -695,8 +695,15 @@ document.querySelectorAll('.card, .center').forEach(el => {
 /* ===== 自适应缩放 ===== */
 const screenEl = document.getElementById('screen');
 function fit(){
-  const s = Math.min(window.innerWidth/1920, window.innerHeight/1080);
-  screenEl.style.transform = `translate(-50%,-50%) scale(${s})`;
+  const sx = window.innerWidth  / 1920;   // 宽度优先：左右必定铺满、零留白
+  const sy = window.innerHeight / 1080;
+  const r  = sy / sx;                     // 视口相对 16:9 的偏差
+  // 常见桌面比例 → 双轴独立铺满（视口正好 16:9 时 sx==sy，等比零变形）
+  // 极端比例（手机竖屏 / 极扁窗口）→ 退回等比居中，避免内容被严重拉伸
+  const free = r > 0.72 && r < 1.40;
+  const X = free ? sx : Math.min(sx, sy);
+  const Y = free ? sy : Math.min(sx, sy);
+  screenEl.style.transform = `translate(-50%,-50%) scale(${X}, ${Y})`;
 }
 window.addEventListener('resize', fit); fit();
 
@@ -804,7 +811,7 @@ function initStars(){
 initStars();
 /* 提升小屏下的清晰度 */
 (function dpr(){
-  const s = Math.min(window.innerWidth/1920, window.innerHeight/1080);
+  const s = window.innerWidth / 1920;   // 与 fit() 一致：宽度优先
   if(s > 1){ cv.width = W*2; cv.height = H*2; cx.setTransform(2,0,0,2,0,0); }
 })();
 
